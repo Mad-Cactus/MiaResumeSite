@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: hidden; /* IE and Edge */
+  scrollbar-width: none;
+  /* background: rgb(51, 34, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(51, 34, 195, 1) 0%,
+    rgba(253, 45, 229, 1) 100%
+  ); */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
