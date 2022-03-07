@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "gatsby": "^4.6.2",
     "gatsby-plugin-gatsby-cloud": "^4.6.0",
     "gatsby-plugin-image": "^2.6.0",
@@ -18,7 +19,9 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-reveal": "^1.2.2"
+    "react-notifications-component": "^3.4.1",
+    "react-reveal": "^1.2.2",
+    "react-scroll": "^1.8.6"
   },
   "devDependencies": {
     "@iconify/react": "^3.1.3",

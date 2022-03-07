@@ -1,17 +1,26 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
+import { Fade } from "react-reveal"
 import "./Experience.css"
 
 const Experience = () => {
   return (
-    <section class="experience pt-100 pb-100" id="experience">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <ul class="timeline-list">
+    <section
+      className="experience pt-100 pb-100 "
+      id="experience"
+      style={{ maxWidth: "75%", margin: "auto" }}
+    >
+      <Fade left>
+        <h1 style={{ marginBottom: "5rem" }}>
+          <span style={{ color: "#7f00ff" }}>-</span> My Experience
+        </h1>
+      </Fade>
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-12">
+            <ul className="timeline-list">
               <Fade left>
                 <li>
-                  <div class="timeline_content">
+                  <div className="timeline_content">
                     <span>2019</span>
                     <h4>Summer Legal Intern</h4>
                     <p>
@@ -27,7 +36,7 @@ const Experience = () => {
               </Fade>
               <Fade right>
                 <li>
-                  <div class="timeline_content">
+                  <div className="timeline_content">
                     <span>2020 - Present</span>
                     <h4>Shift Lead</h4>
                     <p>
@@ -44,7 +53,7 @@ const Experience = () => {
               </Fade>
               <Fade left>
                 <li>
-                  <div class="timeline_content">
+                  <div className="timeline_content">
                     <span>2021 - Present</span>
                     <h4>Crew Member</h4>
                     <p>

@@ -3,6 +3,8 @@ import Mia1 from "../../images/Mia_H-47.png"
 import Mia2 from "../../images/Mia_H-44.png"
 import Mia3 from "../../images/Mia_H-45.png"
 import Mia4 from "../../images/Mia_H-46.png"
+import Hover from "../Hover"
+import { Link } from "react-scroll"
 import Fade from "react-reveal/Fade"
 import { Icon } from "@iconify/react"
 import "./Welcome.css"
@@ -43,14 +45,15 @@ const Welcome = () => {
             background: "#7f00ff",
             maxWidth: "60%",
             minHeight: "55.5rem",
+            marginLeft: "5rem",
           }}
+          className="uk-flex uk-flex-center uk-flex-column"
         >
           <h1
             style={{
               color: "white",
               fontWeight: "600",
-              fontSize: "6.5rem",
-              margin: "5rem",
+              fontSize: "4rem",
             }}
           >
             Hi! I'm Mia Howard
@@ -59,34 +62,66 @@ const Welcome = () => {
             style={{
               color: "white",
               fontWeight: "600",
-              fontSize: "4rem",
-              maxWidth: '50%',
-              margin: "5rem",
+              fontSize: "3.5rem",
+              maxWidth: "50%",
+              marginTop: "2.5rem",
             }}
           >
             Business and Management Student
           </h2>
-          <button
-            className="uk-button"
-            style={{
-              background: "rgba(153,153,204,1)",
-              color: "white",
-              margin: "0 5rem",
-              fontWeight: "600",
-              borderRadius: "15px",
-              fontSize: "1.4rem",
-              padding: "0.5rem",
-              width: "14rem",
-            }}
-          >
-            Contact Me
-          </button>
+          <div style={{ marginTop: "1rem" }}>
+            <Hover>
+              <a
+                href="https://www.linkedin.com/in/mia-howard-4279a022a/"
+                target="_blank"
+              >
+                <Icon
+                  icon="bi:linkedin"
+                  style={{
+                    margin: "0.4rem",
+                    textDecoration: "none",
+                  }}
+                  color="#fff"
+                  width={35}
+                />
+              </a>
+              <p>LinkedIn</p>
+            </Hover>
+            <Hover>
+              <a
+                href="https://instagram.com/miahoward03?utm_medium=copy_link"
+                target="_blank"
+              >
+                <Icon
+                  icon="akar-icons:instagram-fill"
+                  style={{
+                    margin: "0.4rem",
+                    textDecoration: "none",
+                  }}
+                  color="#fff"
+                  width={35}
+                />
+              </a>
+              <p>Instagram</p>
+            </Hover>
+            <Hover>
+              <Link to="contact" smooth={true} offset={-50}>
+                <Icon
+                  icon="carbon:email"
+                  style={{
+                    margin: "0.4rem",
+                    textDecoration: "none",
+                  }}
+                  color="#fff"
+                  width={37}
+                />
+              </Link>
+              <p>Email</p>
+            </Hover>
+          </div>
         </div>
       </Fade>
-      <div
-        id="animation"
-        style={{ maxWidth: "40%", position: "absolute", right: "300px" }}
-      >
+      <div id="animation">
         <img src={Mia1} alt="" />
         <img src={Mia2} alt="" />
         <img src={Mia3} alt="" />

@@ -4,3 +4,45 @@
 #animation img:first-child {
     display: block;
 }
+
+.hover p {
+  transition: all 0.2s ease;
+  opacity: 0;
+  left: -8px;
+  top: 53px;
+  background: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid white;
+  position: absolute;
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+.hover:hover p {
+  opacity: 1;
+}
+
+.hover p:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-bottom: 10px solid #ffffff;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: 23px;
+  bottom: 100%;
+}
+
+
+#animation{
+  position: absolute;
+  right: 300px;
+  max-width: 35%;
+}
+
+@media screen and (min-width:){
+  
+}
+

@@ -1,5 +1,4 @@
 import React from "react"
-import Mia1 from "../../images/Mia_H-73.jpg"
 
 const Education = () => {
   return (
@@ -12,40 +11,78 @@ const Education = () => {
     >
       <div className="uk-flex uk-flex-row, uk-flex-middle">
         <div>
-          <div style={{ padding: "5rem" }}>
-            <h1 style={{ color: "white", fontWeight: "600" }}>
-              ★ Hamilton Southeastern High School
-            </h1>
-            <h4 style={{ color: "white", maxWidth: "60%" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, consequatur. Harum autem iure dolores pariatur, vitae
-              magni natus recusandae enim, cum hic, aliquam sequi deleniti
-              facere asperiores. Aliquam, voluptates fugiat?
-            </h4>
+          <div
+            style={{ padding: "4rem", maxWidth: "87%", margin: "auto" }}
+            className="uk-flex uk-flex-row"
+          >
+            <div style={{ maxWidth: "70%" }}>
+              <h1 style={{ color: "white", fontWeight: "600" }}>
+                <span style={{ color: "black" }}>-</span> Hamilton Southeastern
+                High School
+              </h1>
+              <h4 style={{ color: "white", maxWidth: "60%" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, consequatur. Harum autem iure dolores pariatur,
+                vitae magni natus recusandae enim, cum hic, aliquam sequi
+                deleniti facere asperiores. Aliquam, voluptates fugiat?
+              </h4>
+            </div>
+            <div>
+              <h2 style={{ color: "white", fontWeight: "600" }}>
+                <span style={{ color: "black" }}>-</span> Activities
+              </h2>
+              <ul
+                style={{
+                  listStyleType: "none",
+                  color: "white",
+                  fontWeight: "600",
+                  lineHeight: "1.9rem",
+                }}
+              >
+                <li>Vice-President of Calligraphy Club</li>
+                <li>Key Club Member</li>
+                <li>National Honors Society Member</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </div>
-          <div style={{ padding: "5rem" }}>
-            <h1 style={{ color: "white", fontWeight: "600" }}>
-              ★ Miami Oxford Unviersity
-            </h1>
-            <h4 style={{ color: "white", maxWidth: "60%" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, consequatur. Harum autem iure dolores pariatur, vitae
-              magni natus recusandae enim, cum hic, aliquam sequi deleniti
-              facere asperiores. Aliquam, voluptates fugiat?
-            </h4>
+          <div
+            style={{ padding: "4rem", maxWidth: "87%", margin: "auto" }}
+            className="uk-flex uk-flex-row"
+          >
+            <div style={{ maxWidth: "70%" }}>
+              <h1 style={{ color: "white", fontWeight: "600" }}>
+                <span style={{ color: "black" }}>-</span> Indiana University
+              </h1>
+              <h4 style={{ color: "white", maxWidth: "60%" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, consequatur. Harum autem iure dolores pariatur,
+                vitae magni natus recusandae enim, cum hic, aliquam sequi
+                deleniti facere asperiores. Aliquam, voluptates fugiat?
+              </h4>
+            </div>
+            <div>
+              <h2 style={{ color: "white", fontWeight: "600" }}>
+                <span style={{ color: "black" }}>-</span> Activities
+              </h2>
+              <ul
+                style={{
+                  listStyleType: "none",
+                  color: "white",
+                  fontWeight: "600",
+                  lineHeight: "1.9rem",
+                }}
+              >
+                <li>Direct-Admit to Kelley School of Business</li>
+                <li>Competing Debate Club Member</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
-        {/* <img
-          style={{
-            borderRadius: "50px",
-            maxWidth: "30rem",
-            margin: "auto ",
-            border: "white solid 5px",
-            padding: "1rem",
-          }}
-          src={Mia1}
-          alt=""
-        /> */}
       </div>
     </div>
   )
