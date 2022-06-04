@@ -26,11 +26,7 @@ const Experience = () => {
                     <h4>Summer Legal Intern</h4>
                     <p>
                       Answering phones, filed, prospect intake and scheduling,
-                      observed court room proceedings. Lorem ipsum dolor sit
-                      amet consectetur adipisicing elit. Alias accusantium
-                      deleniti aliquam temporibus natus molestiae corrupti. Amet
-                      sint repellat eius provident? Quod voluptatum, alias
-                      aspernatur reiciendis libero vitae est? Eos.
+                      observed court room proceedings. Directed and talked to clients while in office. Filed and reserved meeting times, spectated court room appearences.
                     </p>
                   </div>
                 </li>

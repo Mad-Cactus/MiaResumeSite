@@ -111,7 +111,7 @@
 /* --------- Responsive ---------- */
 @media only screen and (max-width: 600px) {
   .grid {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto;
   }
 
   .item1 {

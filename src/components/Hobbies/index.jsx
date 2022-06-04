@@ -78,7 +78,7 @@ const Hobbies = () => {
           Embroidery
         </h2>
         <h4 style={{ color: "white" }}>
-          I run my own embroidery business in Indiana, check out my
+          I run my own embroidery business, check out my
           <a href="https://instagram.com/totelly.yours?igshid=YmMyMTA2M2Y=">
             {" "}
             Instagram
