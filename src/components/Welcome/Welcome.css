@@ -1,8 +1,8 @@
 #animation img {
-    display: none;
+  display: none;
 }
 #animation img:first-child {
-    display: block;
+  display: block;
 }
 
 .hover p {
@@ -23,7 +23,7 @@
 }
 
 .hover p:after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   position: absolute;
@@ -35,14 +35,176 @@
   bottom: 100%;
 }
 
-
-#animation{
+#animation {
   position: absolute;
   right: 300px;
   max-width: 35%;
 }
 
-@media screen and (min-width:){
-  
+#welcome-header {
+  max-width: 60%;
+  margin-left: 5rem;
+}
+@media screen and (min-width: 55rem) and (max-width: 62.3rem) {
+  #animation {
+    top: 65%;
+    right: 200px;
+  }
 }
 
+@media screen and (min-width: 62.3rem) and (max-width: 62.5rem) {
+  #animation {
+    top: 65%;
+  }
+}
+@media screen and (min-width: 62.5rem) and (max-width: 68.3rem) {
+  #animation {
+    top: 60%;
+  }
+}
+@media screen and (min-width: 68.3rem) and (max-width: 70.5rem) {
+  #animation {
+    top: 58%;
+  }
+}
+@media screen and (min-width: 70.5rem) and (max-width: 72.4rem) {
+  #animation {
+    top: 56%;
+  }
+}
+@media screen and (min-width: 72.4rem) and (max-width: 75rem) {
+  #animation {
+    top: 54%;
+  }
+}
+@media screen and (min-width: 75rem) and (max-width: 76.75rem) {
+  #animation {
+    top: 52%;
+  }
+}
+@media screen and (min-width: 76.75rem) and (max-width: 78.87rem) {
+  #animation {
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 78.87rem) and (max-width: 82.06rem) {
+  #animation {
+    top: 48%;
+  }
+}
+
+@media screen and (min-width: 82.06rem) and (max-width: 83.81rem) {
+  #animation {
+    top: 46%;
+  }
+}
+
+@media screen and (min-width: 83.81rem) and (max-width: 85.5rem) {
+  #animation {
+    top: 44%;
+  }
+}
+
+@media screen and (min-width: 85.5rem) and (max-width: 87.81rem) {
+  #animation {
+    top: 42%;
+  }
+}
+
+@media screen and (min-width: 87.81rem) and (max-width: 90.18rem) {
+  #animation {
+    top: 40%;
+  }
+}
+
+@media screen and (min-width: 90.18rem) and (max-width: 92.43rem) {
+  #animation {
+    top: 38%;
+  }
+}
+
+@media screen and (min-width: 92.43rem) and (max-width: 94.56rem) {
+  #animation {
+    top: 36%;
+  }
+}
+
+@media screen and (min-width: 94.56rem) and (max-width: 96.62rem) {
+  #animation {
+    top: 34%;
+  }
+}
+
+@media screen and (min-width: 96.62rem) and (max-width: 99.06rem) {
+  #animation {
+    top: 32%;
+  }
+}
+
+@media screen and (min-width: 99.06rem) and (max-width: 101.12rem) {
+  #animation {
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 101.12rem) and (max-width: 102.06rem) {
+  #animation {
+    top: 28%;
+  }
+}
+
+@media screen and (min-width: 103.06rem) and (max-width: 103.12rem) {
+  #animation {
+    top: 28%;
+  }
+}
+
+@media screen and (min-width: 103.12rem) and (max-width: 105.25rem) {
+  #animation {
+    top: 26%;
+  }
+}
+
+@media screen and (min-width: 105.25rem) and (max-width: 107.62rem) {
+  #animation {
+    top: 24%;
+  }
+}
+
+@media screen and (min-width: 107.62rem) and (max-width: 109.75rem) {
+  #animation {
+    top: 22%;
+  }
+}
+
+@media screen and (min-width: 109.75rem) and (max-width: 112.12rem) {
+  #animation {
+    top: 20%;
+  }
+}
+
+@media screen and (min-width: 112.12rem) and (max-width: 114.18rem) {
+  #animation {
+    top: 18%;
+  }
+}
+
+@media screen and (min-width: 114.18rem) and (max-width: 116.68rem) {
+  #animation {
+    top: 16%;
+  }
+}
+
+@media screen and (max-width: 55rem) and (max-width: 62.3rem) {
+  #animation {
+    display: none;
+  }
+  #stars {
+    display: none;
+  }
+  #welcome-header {
+    min-width: 100%;
+    margin: 0 1rem;
+  }
+}

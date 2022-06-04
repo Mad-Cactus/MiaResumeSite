@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from "react"
 import { Helmet } from "react-helmet"
+// @ts-ignore
 import { container, content } from "./Layout.module.css"
 
 const Layout = ({ children}) => {

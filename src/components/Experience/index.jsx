@@ -1,24 +1,25 @@
 import React from "react"
-import { Fade } from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 import "./Experience.css"
 
 const Experience = () => {
   return (
-    <section
-      className="experience pt-100 pb-100 "
+    <div
+      className="pt-100 pb-100 uk-flex uk-flex-center uk-flex-wrap"
       id="experience"
-      style={{ maxWidth: "75%", margin: "auto" }}
     >
-      <Fade left>
-        <h1 style={{ marginBottom: "5rem" }}>
-          <span style={{ color: "#7f00ff" }}>-</span> My Experience
-        </h1>
-      </Fade>
-      <div className="container">
-        <div className="row">
+      <div style={{ margin: "3rem" }}>
+        <Fade direction="left">
+          <h2>
+            <span style={{ color: "#7f00ff" }}>-</span> My Experience
+          </h2>
+        </Fade>
+      </div>
+      <div id="timeline_container">
+        <div className="row" style={{ maxWidth: "75%", margin: "auto" }}>
           <div className="col-xl-12">
             <ul className="timeline-list">
-              <Fade left>
+              <Fade direction="left">
                 <li>
                   <div className="timeline_content">
                     <span>2019</span>
@@ -34,7 +35,7 @@ const Experience = () => {
                   </div>
                 </li>
               </Fade>
-              <Fade right>
+              <Fade direction="right">
                 <li>
                   <div className="timeline_content">
                     <span>2020 - Present</span>
@@ -42,27 +43,36 @@ const Experience = () => {
                     <p>
                       Trained new employees, led closing team, responsible for
                       customer service interactions, prepped food, problem
-                      solved as needed during shift. Lorem ipsum dolor, sit amet
-                      consectetur adipisicing elit. Accusantium maiores,
-                      distinctio illum ipsa illo eaque consequatur provident
-                      cupiditate modi at maxime itaque quod eius voluptatem
-                      molestiae incidunt ea quidem nobis.
+                      solved as needed during shift. Helped open and run store
+                      by myself, helped increase productivity among fellow
+                      coworkers and with customer and staff interactions.
                     </p>
                   </div>
                 </li>
               </Fade>
-              <Fade left>
+              <Fade direction="left">
                 <li>
                   <div className="timeline_content">
-                    <span>2021 - Present</span>
+                    <span>2021 - 2022</span>
                     <h4>Crew Member</h4>
                     <p>
                       Responsible for customer service interactions, prepped
-                      food, cleaned seating area, performed closing duties.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum, vitae mollitia, ipsam quos quidem illo atque cum,
-                      ut officiis debitis similique alias. Esse, officia
-                      obcaecati dicta officiis consequuntur laborum. Ex.
+                      food, cleaned seating area, performed closing duties. Kept
+                      track of sales during closing periods, helped open and
+                      take inventory throughout store. Helped guests with their
+                      orders and deliver food in a timely manner.
+                    </p>
+                  </div>
+                </li>
+              </Fade>
+              <Fade direction="right">
+                <li>
+                  <div className="timeline_content">
+                    <span>2022 - Present</span>
+                    <h4>Crew Member</h4>
+                    <p>
+                      Kept working environemnt clean, helped communication
+                      between other coworkers about necessary           precautions and care with new dogs. Helped train and stop fighting between dogs. Gave suggestions for improving safety and instruction of pets while in care.
                     </p>
                   </div>
                 </li>
@@ -71,7 +81,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -1,0 +1,18 @@
+#photo-list-small {
+  display: none;
+}
+#photo-list-med {
+  display: none;
+}
+
+@media screen and (max-width: 35rem) {
+  #photo-list-large {
+    display: none;
+  }
+  #photo-list-med {
+    display: none;
+  }
+  #photo-list-small {
+    display: block;
+  }
+}

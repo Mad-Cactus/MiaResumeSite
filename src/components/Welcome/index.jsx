@@ -5,7 +5,7 @@ import Mia3 from "../../images/Mia_H-45.png"
 import Mia4 from "../../images/Mia_H-46.png"
 import Hover from "../Hover"
 import { Link } from "react-scroll"
-import Fade from "react-reveal/Fade"
+import { Fade } from "react-awesome-reveal"
 import { Icon } from "@iconify/react"
 import "./Welcome.css"
 
@@ -31,22 +31,20 @@ const Welcome = () => {
   return (
     <div
       id="welcome"
-      className="uk-flex uk-flex uk-flex-row"
+      className="uk-flex"
       style={{
-        minHeight: "100%",
         background: "rgb(127,0,255)",
         background:
           "linear-gradient(90deg, rgba(127,0,255,1) 0%, rgba(153,153,204,1) 100%)",
       }}
     >
-      <Fade left>
+      <Fade direction="left">
         <div
           style={{
             background: "#7f00ff",
-            maxWidth: "60%",
-            minHeight: "55.5rem",
-            marginLeft: "5rem",
+            padding: '29% 0'
           }}
+          id='welcome-header'
           className="uk-flex uk-flex-center uk-flex-column"
         >
           <h1
@@ -127,78 +125,80 @@ const Welcome = () => {
         <img src={Mia3} alt="" />
         <img src={Mia4} alt="" />
       </div>
-      <Fade right>
-        <div style={{ position: "absolute", right: "-100px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "400px",
-              transform: "rotate(40deg)",
-            }}
-            color="#fff"
-          />
+      <div id="stars">
+        <div style={{ right: "0px", top: "0px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "400px",
+                transform: "rotate(40deg)",
+              }}
+              color="#fff"
+            />
+          </Fade>
         </div>
-      </Fade>
-      <Fade right>
-        <div style={{ position: "absolute", right: "-50px", top: "50px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "300px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
-          />
+        <div style={{ right: "50px", top: "50px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "300px",
+                transform: "rotate(40deg)",
+              }}
+              color="#7f00ff"
+            />
+          </Fade>
         </div>
-      </Fade>
-      <Fade right>
-        <div style={{ position: "absolute", right: "55px", top: "365px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "270px",
-              transform: "rotate(40deg)",
-            }}
-            color="white"
-          />
+        <div style={{ right: "100px", top: "400px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "270px",
+                transform: "rotate(40deg)",
+              }}
+              color="white"
+            />
+          </Fade>
         </div>
-      </Fade>
-      <Fade right>
-        <div style={{ position: "absolute", right: "90px", top: "400px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "200px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
-          />
+        <div style={{ right: "135px", top: "435px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "200px",
+                transform: "rotate(40deg)",
+              }}
+              color="#7f00ff"
+            />
+          </Fade>
         </div>
-      </Fade>
-      <Fade right>
-        <div style={{ position: "absolute", right: "36px", top: "575px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "150px",
-              transform: "rotate(40deg)",
-            }}
-            color="white"
-          />
+        <div style={{ right: "100px", top: "670px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "150px",
+                transform: "rotate(40deg)",
+              }}
+              color="white"
+            />
+          </Fade>
         </div>
-      </Fade>
-      <Fade right>
-        <div style={{ position: "absolute", right: "60px", top: "600px" }}>
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "100px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
-          />
+        <div style={{ right: "125px", top: "695px", position: "absolute" }}>
+          <Fade direction="right">
+            <Icon
+              icon="ant-design:star-filled"
+              style={{
+                width: "100px",
+                transform: "rotate(40deg)",
+              }}
+              color="#7f00ff"
+            />
+          </Fade>
         </div>
-      </Fade>
+      </div>
     </div>
   )
 }

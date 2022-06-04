@@ -1,7 +1,7 @@
 import React from "react"
 import { Store } from "react-notifications-component"
 import emailjs from "@emailjs/browser"
-import { Fade } from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 
 const Contact = () => {
   const sendEmail = e => {
@@ -57,20 +57,25 @@ const Contact = () => {
         margin: "0",
       }}
     >
-      <Fade bottom>
+      <Fade direction="down">
         <form
-          style={{ width: "80%", margin: "7rem", color: "white" }}
+          style={{ maxWidth: "80%", margin: "auto", color: "white" }}
           id="contact_email"
           onSubmit={e => sendEmail(e)}
         >
           <fieldset className="uk-fieldset">
-            <h1 style={{ color: "white" }}>
+            <h2 style={{ color: "white" }}>
               <span style={{ color: "black" }}>-</span> Contact Me
-            </h1>
+            </h2>
           </fieldset>
           <div className="uk-margin">
             <input
               className="uk-input"
+              style={{
+                borderRadius: "40px",
+                padding: "1rem",
+                paddingBottom: "1.15rem",
+              }}
               type="text"
               id="name"
               placeholder="Name"
@@ -80,6 +85,11 @@ const Contact = () => {
           </div>
           <div className="uk-margin">
             <input
+              style={{
+                borderRadius: "40px",
+                padding: "1rem",
+                paddingBottom: "1.15rem",
+              }}
               className="uk-input"
               type="email"
               id="email"
@@ -91,9 +101,13 @@ const Contact = () => {
           <div className="uk-margin">
             <textarea
               className="uk-textarea"
-              rows="5"
+              rows={3}
               id="message"
               name="message"
+              style={{
+                borderRadius: "20px",
+                padding: "0.8rem",
+              }}
               placeholder="Message"
               required
             ></textarea>
@@ -101,11 +115,17 @@ const Contact = () => {
           <button
             className="uk-button uk-button-default"
             type="submit"
-            style={{ background: "white" }}
+            style={{
+              background: "white",
+              fontSize: "1rem",
+              fontWeight: "bold",
+              borderRadius: "20px",
+            }}
           >
             Submit
           </button>
         </form>
+        <div></div>
       </Fade>
     </div>
   )

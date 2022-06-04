@@ -1,0 +1,24 @@
+#p-margin {
+  margin-left: 1.7rem;
+}
+
+#skills {
+  line-height: 3rem;
+}
+
+.skills-box {
+  max-width: 50%;
+  margin: 3rem;
+}
+
+@media screen and (max-width: 55rem) {
+  #p-margin {
+    margin-left: 0;
+  }
+  #skills {
+    margin-left: -1.7rem;
+  }
+  .skills-box {
+    max-width: 65%;
+  }
+}
