@@ -42,9 +42,9 @@ const Welcome = () => {
         <div
           style={{
             background: "#7f00ff",
-            padding: '29% 0'
+            padding: "29% 0",
           }}
-          id='welcome-header'
+          id="welcome-header"
           className="uk-flex uk-flex-center uk-flex-column"
         >
           <h1

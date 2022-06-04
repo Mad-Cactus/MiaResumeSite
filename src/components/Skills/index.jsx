@@ -16,8 +16,15 @@ const Skills = () => {
         </Fade>
         <Fade direction="left" delay={500}>
           <p style={{ fontSize: "2rem" }} id="p-margin">
-            Hi! <br/>
-            I'm Mia Howard, a freshman at Indiana University studying business and management at the Kelly School of Business. I have a custom embroidery business here in Indiana and I love combining creativity and business. I am a dedicated, responsible and independent leader due to my previous experience in the food industry and beyond.
+            <span style={{ fontWeight: "bold" }}>
+              Hi!<span>{"   "}👋</span>
+            </span>
+            <br />
+            I'm Mia Howard, a freshman at Indiana University studying business
+            and management at the Kelly School of Business. I have a custom
+            embroidery business here in Indiana and I love combining creativity
+            and business. I am a dedicated, responsible and independent leader
+            due to my previous experience in the food industry and beyond.
           </p>
         </Fade>
       </div>

@@ -1,189 +1,91 @@
 import React from "react"
 import { Fade } from "react-awesome-reveal"
 import { Icon } from "@iconify/react"
-import Hover from "../Hover"
-import Mia5 from "../../images/Mia_H-43.png"
 import "./Hobbies.css"
 
 const Hobbies = () => {
   return (
-    <div
-      className="uk-flex uk-flex-row uk-flex-center uk-flex-wrap"
-      id="hobby-container"
-    >
-      <div style={{ margin: "3rem 0" }}>
-        <Fade direction="left">
-          <h2>
-            <span style={{ color: "#7f00ff" }}>-</span> My Interests
-          </h2>
-        </Fade>
-      </div>
-      <div
-        className="uk-flex uk-flex-row uk-flex-middle uk-flex-wrap"
-        id="hobby-inner"
-      >
-        <ul
-          className="uk-flex uk-flex-wrap"
-          id="hobby-list"
+    <main class="grid">
+      <section class="content item1">
+        <div style={{ margin: "3rem 0" }}>
+          <Fade direction="left">
+            <h2>
+              <span style={{ color: "#7f00ff" }}>-</span> My Interests
+            </h2>
+          </Fade>
+        </div>
+      </section>
+      <section class="hobby-card item2">
+        <h2 style={{ color: "white" }}>
+          <Icon icon="ic:sharp-sports-soccer" style={{ margin: "0.6rem" }} />
+          Soccer
+        </h2>
+        <h4 style={{ color: "white" }}>
+          I have been playing soccer for 10 years!
+        </h4>
+      </section>
+      <section class="hobby-card item3"></section>
+      <section class="hobby-card item4"></section>
+      <section class="hobby-card item5">
+        <h2
           style={{
-            color: "#7f00ff",
-            listStyleType: "none",
-            fontSize: "2rem",
-            fontWeight: "bold",
+            color: "white",
           }}
         >
-          <li className="hobby-hover">
-            <Hover>
-              <div>
-                <Icon
-                  icon="ic:sharp-sports-soccer"
-                  style={{ margin: "0.6rem" }}
-                />
-                Soccer
-              </div>
-              <p style={{ color: "#212529" }}>
-                I have been playing soccer for 10 years!
-              </p>
-            </Hover>
-          </li>
-          <li className="hobby-hover">
-            <Hover>
-              <div>
-                <Icon
-                  icon="ic:outline-ice-skating"
-                  style={{ margin: "0.6rem" }}
-                />
-                Ice Skating
-              </div>
-              <p
-                style={{
-                  color: "#212529",
-                }}
-              >
-                I have been ice skating since I was a child!
-              </p>
-            </Hover>
-          </li>
-          <li className="hobby-hover">
-            <Hover>
-              <Icon icon="ph:needle-light" style={{ margin: "0.6rem" }} />
-              Embroidery
-              <p style={{ color: "#212529" }}>
-                I run my own embroidery business, check out my
-                <a href="https://instagram.com/totelly.yours?igshid=YmMyMTA2M2Y=">
-                  {" "}
-                  Instagram
-                </a>
-              </p>
-            </Hover>
-          </li>
-          <li className="hobby-hover">
-            <Hover>
-              <Icon
-                icon="fluent:movies-and-tv-16-regular"
-                style={{ margin: "0.6rem" }}
-              />
-              Cinema
-              <p style={{ color: "#212529" }}>
-                I'm a movie buff and used to sign opera!
-              </p>
-            </Hover>
-          </li>
-          <li className="hobby-hover">
-            <Hover>
-              <Icon icon="ep:reading" style={{ margin: "0.6rem" }} />
-              Reading
-              <p style={{ color: "#212529" }}>
-                My favorite author is Jodi Picoult!
-              </p>
-            </Hover>
-          </li>
-          <li className="hobby-hover" style={{ marginBottom: "5rem" }}>
-            <Hover>
-              <Icon icon="bxs:business" style={{ margin: "0.6rem" }} />
-              Business
-              <p style={{ color: "#212529" }}>
-                I run my own embroidery business and are majoring in the
-                business field!
-              </p>
-            </Hover>
-          </li>
-        </ul>
-        <img id="hobbies-photo" src={Mia5} alt="" style={{ maxWidth: "33%" }} />
-      </div>
-      {/* <div style={{ right: "0px", top: "3500px", position: "absolute" }}>
-        <Fade direction="right">
+          <Icon icon="ic:outline-ice-skating" style={{ margin: "0.6rem" }} />
+          Ice Skating
+        </h2>
+        <h4
+          style={{
+            color: "white",
+          }}
+        >
+          I have been ice skating since I was a child!
+        </h4>
+      </section>
+      <section class="hobby-card item7"></section>
+      <section class="hobby-card item8">
+        <h2 style={{ color: "white" }}>
+          <Icon icon="ep:reading" style={{ margin: "0.6rem" }} />
+          Reading
+        </h2>
+        <h4 style={{ color: "white" }}>My favorite author is Jodi Picoult!</h4>
+      </section>
+      <section class="hobby-card item9">
+        <h2 style={{ color: "white" }}>
           <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "300px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
+            icon="fluent:movies-and-tv-16-regular"
+            style={{ margin: "0.6rem" }}
           />
-        </Fade>
-      </div>
-      <div style={{ right: "50px", top: "3550px", position: "absolute" }}>
-        <Fade direction="right">
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "200px",
-              transform: "rotate(40deg)",
-            }}
-            color="#fff"
-          />
-        </Fade>
-      </div>
-      <div style={{ right: "1900px", top: "3750px", position: "absolute" }}>
-        <Fade direction="left">
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "200px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
-          />
-        </Fade>
-      </div>
-      <div style={{ right: "1940px", top: "3785px", position: "absolute" }}>
-        <Fade direction="left">
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "125px",
-              transform: "rotate(40deg)",
-            }}
-            color="#fff"
-          />
-        </Fade>
-      </div>
-      <div style={{ right: "1840px", top: "3900px", position: "absolute" }}>
-        <Fade direction="left">
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "150px",
-              transform: "rotate(40deg)",
-            }}
-            color="#7f00ff"
-          />
-        </Fade>
-      </div>
-      <div style={{ right: "1865px", top: "3925px", position: "absolute" }}>
-        <Fade direction="left">
-          <Icon
-            icon="ant-design:star-filled"
-            style={{
-              width: "100px",
-              transform: "rotate(40deg)",
-            }}
-            color="#fff"
-          />
-        </Fade>
-      </div> */}
-    </div>
+          Cinema
+        </h2>
+        <h4 style={{ color: "white" }}>
+          I'm a huge movie buff, my favorites are rom-coms and thrillers
+        </h4>
+      </section>
+      <section class="hobby-card item10">
+        <h2 style={{ color: "white" }}>
+          <Icon icon="bxs:business" style={{ margin: "0.6rem" }} />
+          Business
+        </h2>
+        <h4 style={{ color: "white" }}>
+          I run my own embroidery business and am majoring in the business!
+        </h4>
+      </section>
+      <section class="hobby-card item11">
+        <h2 style={{ color: "white" }}>
+          <Icon icon="ph:needle-light" style={{ margin: "0.6rem" }} />
+          Embroidery
+        </h2>
+        <h4 style={{ color: "white" }}>
+          I run my own embroidery business in Indiana, check out my
+          <a href="https://instagram.com/totelly.yours?igshid=YmMyMTA2M2Y=">
+            {" "}
+            Instagram
+          </a>
+        </h4>
+      </section>
+    </main>
   )
 }
 

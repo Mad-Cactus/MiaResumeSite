@@ -1,39 +1,128 @@
-.hobby-hover {
-  padding: 5rem 2rem;
-  color: #7f00ff;
+/* --------- hobby-card Animation ---------- */
+.hobby-card:not(:empty):hover,
+.hobby-card:not(:empty):focus {
+  z-index: 1;
+  color: #fff;
+  background: rgb(127, 0, 255);
+  opacity: 1;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+.hobby-card:not(:empty):hover:after,
+.hobby-card:not(:empty):focus:after {
+  opacity: 1;
+}
+.hobby-card:not(:empty):hover:before,
+.hobby-card:not(:empty):focus:before {
+  opacity: 0;
 }
 
-#hobby-inner {
-  max-width: 80%;
-  max-height: 40rem;
+.hobby-card {
+  padding: 10px;
+  background: rgb(127, 0, 255);
+  border-radius: 0.7em;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.hobby-card:empty {
+  opacity: 0.3;
+}
+.hobby-card:before,
+.hobby-card:after {
+  content: "";
+  position: absolute;
+  border-radius: 0.7em;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.hobby-card:after {
+  opacity: 0;
 }
 
-#hobby-container {
-  max-width: 75%;
-  margin: auto;
-  padding: 7rem 0;
+/* --------- Grid ---------- */
+.grid {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
 }
-#hobbies-photo {
-    display: none;
+
+.item1 {
+  grid-area: 1/1/3/3;
+}
+
+.item2 {
+  grid-area: 3/3/4/4;
+}
+
+.item3 {
+  grid-area: 4/2/5/4;
+}
+
+.item4 {
+  grid-area: 1/3/2/5;
+}
+
+.item5 {
+  grid-area: 2/4/3/5;
+}
+
+.item6 {
+  grid-area: 3/4/4/5;
+}
+
+.item7 {
+  grid-area: 3/4/5/5;
+}
+
+.item8 {
+  grid-area: 1/5/2/6;
+}
+
+.item9 {
+  grid-area: 2/5/3/6;
+}
+
+.item10 {
+  grid-area: 3/5/4/6;
+}
+
+.item11 {
+  grid-area: 4/5/5/6;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/* --------- Responsive ---------- */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 50% 50%;
   }
 
-@media screen and (max-width: 55rem) {
-  .hobby-hover {
-    padding: 1.5rem;
-    margin: 1rem auto;
+  .item1 {
+    grid-area: 1/1/2/3;
   }
-  #hobby-inner {
-    max-width: 100%;
-    max-height: none;
+
+  .hobby-card {
+    grid-area: auto;
+    text-align: left;
   }
-  #hobby-list {
-    padding: 0;
-  }
-  #hobby-container {
-    max-width: 95%;
-    padding: 1rem 0;
-  }
-  #hobbies-photo {
+  .hobby-card:empty {
     display: none;
   }
 }
