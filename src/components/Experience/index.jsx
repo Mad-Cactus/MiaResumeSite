@@ -26,7 +26,9 @@ const Experience = () => {
                     <h4>Summer Legal Intern</h4>
                     <p>
                       Answering phones, filed, prospect intake and scheduling,
-                      observed court room proceedings. Directed and talked to clients while in office. Filed and reserved meeting times, spectated court room appearences.
+                      observed court room proceedings. Directed and talked to
+                      clients while in office. Filed and reserved meeting times,
+                      spectated court room appearences.
                     </p>
                   </div>
                 </li>
@@ -67,8 +69,11 @@ const Experience = () => {
                     <span>2022 - Present</span>
                     <h4>Crew Member</h4>
                     <p>
-                      Kept working environemnt clean, helped communication
-                      between other coworkers about necessary           precautions and care with new dogs. Helped train and stop fighting between dogs. Gave suggestions for improving safety and instruction of pets while in care.
+                      Kept working environment clean, helped communication
+                      between other coworkers about necessary precautions and
+                      care with new dogs. Helped train and stop fighting between
+                      dogs. Gave suggestions for improving safety and
+                      instruction of pets while in care.
                     </p>
                   </div>
                 </li>
