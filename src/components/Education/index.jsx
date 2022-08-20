@@ -62,7 +62,7 @@ const Education = () => {
                   Indiana University Bloomington
                 </h1>
                 <h3 style={{ color: "white" }}>Bloomington, Indiana</h3>
-                <h4 style={{ color: "white" }}>GPA: 4.00</h4>
+                <h4 style={{ color: "white" }}>GPA: 3.75</h4>
                 <h4 style={{ color: "white" }}>
                   <ul
                     style={{
@@ -72,7 +72,7 @@ const Education = () => {
                     }}
                   >
                     <li>Direct-Admit to Kelley School of Business</li>
-                    <li>Competing Debate Club Member</li>
+                    
                   </ul>
                 </h4>
               </div>
