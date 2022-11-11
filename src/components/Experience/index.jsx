@@ -36,7 +36,7 @@ const Experience = () => {
               <Fade direction="right">
                 <li>
                   <div className="timeline_content">
-                    <span>2020 - Present</span>
+                    <span>2020 - 2021</span>
                     <h4>Shift Lead</h4>
                     <p>
                       Trained new employees, led closing team, responsible for
@@ -66,7 +66,7 @@ const Experience = () => {
               <Fade direction="right">
                 <li>
                   <div className="timeline_content">
-                    <span>2022 - Present</span>
+                    <span>2021 - 2022</span>
                     <h4>Crew Member</h4>
                     <p>
                       Kept working environment clean, helped communication
@@ -74,6 +74,20 @@ const Experience = () => {
                       care with new dogs. Helped train and stop fighting between
                       dogs. Gave suggestions for improving safety and
                       instruction of pets while in care.
+                    </p>
+                  </div>
+                </li>
+              </Fade>
+              <Fade direction="left">
+                <li>
+                  <div className="timeline_content">
+                    <span>2022 - Present</span>
+                    <h4>Test Proctor</h4>
+                    <p>
+                      Proctored exams for students with disabilities, provided
+                      accommodations for students who needed them, filed and
+                      organized exams, worked directly with students to ensure a
+                      positive experience.
                     </p>
                   </div>
                 </li>

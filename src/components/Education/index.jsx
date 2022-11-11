@@ -36,7 +36,7 @@ const Education = () => {
                   Hamilton Southeastern High School
                 </h1>
                 <h3 style={{ color: "white" }}>Fishers, Indiana</h3>
-                <h4 style={{ color: "white" }}>GPA: 4.31</h4>
+                <h4 style={{ color: "white" }}>GPA: 4.4</h4>
                 <h4 style={{ color: "white" }}>
                   <ul
                     style={{
